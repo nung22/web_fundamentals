@@ -1,0 +1,35 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+/* CSS Code */
+body > h1,h2,h3{
+    margin: 7px;
+    padding: 5px;
+}
+
+h1{
+    color: white;
+    background-color: black;
+}
+
+span{
+    color: aqua;
+}
+
+h2{
+    color:white;
+    font-style: italic;
+    font-weight: normal;
+    background-color: rebeccapurple;
+    text-align: center;
+}
+
+h3{
+    text-decoration: underline;
+    background-color:rgb(138, 163, 212);
+    text-align: right;
+}
