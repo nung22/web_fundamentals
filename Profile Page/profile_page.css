@@ -4,9 +4,10 @@
     padding: 0;
     font-family: "Poppins";
 }
+/* set page width */
 .container{
     width: 840px;
-    /* margin: 0 auto; */
+    background-color: white;
 }
 
 /* General Formatting of Profile Page --------------*/
@@ -15,8 +16,8 @@
     display: flex;
     justify-content: center;
 }
-/* Display profile & sidebar content inline aligned to
-top of page */
+/* Display profile & sidebar content inline aligned 
+at top of page */
 .profile,.side-bar{
     display: inline-block;
     vertical-align: top;
@@ -25,17 +26,18 @@ top of page */
 .profile{
     margin-left: 110px;
     flex: 6;
-    /* justify-content: center; */
 }
 .side-bar{
     margin-right: 110px;
     flex: 3.2;
-    /* justify-content: center; */
 }
+/* space tops of each card apart from each other */
 #basic,#edu,#conn-reqs,#your-conn{
     margin-top: 20px;
 }
 .top{
+    /* set color for top of education, connection
+    requests and connections cards */
     background-color: #333333;
     color: white;
     font-size: 12px;
@@ -43,6 +45,8 @@ top of page */
     display: flex;
     align-items: center;
 }
+/* format and size counters for the side bar
+cards */
 .top > .count{
     height: 22px;
     width: 25px;
@@ -55,6 +59,7 @@ top of page */
     font-weight: bold;
     font-size: 13.5px;
 }
+/* add outlines to card bottoms */
 .bottom{
     border-left: 3px solid lightgray;
     border-right: 3px solid lightgray;
@@ -63,12 +68,14 @@ top of page */
 .side-bar .bottom{
     padding-top: 10px;
 }
+/* format names of other users */
 .other-user{
     display: flex;
     align-items: center;
     margin: 0px 0px 8px 10px;
     font-size: 15px;
 }
+/* size and format pictures of other users */
 .other-user img{
     width: 26px;
     border: 2px solid lightgray;
@@ -79,9 +86,12 @@ top of page */
 /* Navigation Bar ----------------------------------*/
 .nav{
     height: 30px;
+    /* set color of nav bar */
     background-color: black;
     display: flex;
     align-items: center;
+    /* push nav links and sign out button to
+    opposite sides of the nav bar */
     justify-content: space-between;
     padding: 15px 110px;
     color: white;
@@ -90,6 +100,7 @@ top of page */
     flex: 5;
     display: flex;
     align-items: center;
+    /* properly space nav links and title */
     justify-content: space-between;
     font-size: small;
     list-style: none;
@@ -98,11 +109,13 @@ top of page */
 }
 .nav a{
     color: white;
+    /* remove underlines from links */
     text-decoration-line: none;
 }
 .nav .active{
     font-weight: bold;
 }
+/* increase size of title for emphasis */
 .nav .nav-title{
     font-size: 30px;
 }
@@ -113,19 +126,22 @@ top of page */
     color: white;
     font-size:small;
 }
-/* User Card */
+/* Basic Info */
+/* formatting for basic info card */
 #basic{
     height: 275px;
-    background-color: white;
 }
 #basic .top{
     height: 75px;
+    /* set color of top segment*/
     background-color: #17a2b8;
 }
 #basic .bottom{
     height: 125px;
     padding: 35px;
 }
+/* format profile pic and pin between top and
+bottom segments on the left */
 .profile-pic{
     width: 70px;
     position: relative;
@@ -149,16 +165,15 @@ top of page */
 }
 
 /* Education ---------------------------------------*/
+/* formatting for education card */
 #edu{
     height: 125px;
-    background-color: white;
 }
-/* Set title background to be dark gray */
 #edu .top{
     height: 35px;
     padding-left: 30px;
 }
-/* Add side borders */
+/* remove bottom border */
 #edu .bottom{
     height: 100px;
     padding: 10px 10px 0px 26px;
@@ -177,6 +192,7 @@ top of page */
 }
     
 /* Connection Requests -----------------------------*/
+/* formatting for connection requests card */
 #conn-reqs{
     height: 175px;
 }
@@ -195,6 +211,7 @@ top of page */
 }
 
 /* Your Connections --------------------------------*/
+/* formatting for connection card */
 #your-conn{
     height: 220px;
 }
@@ -204,8 +221,8 @@ top of page */
 #your-conn .bottom{
     height: 185px;
 }
+/* separate expansion link from connections */
 #your-conn .expansion{
-
     font-size: small;
     border-top: 3px solid lightgray;
     padding: 5px 10px;
