@@ -1,0 +1,125 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito";
+    font-weight: 400;
+}
+
+/* General Page Formatting */
+.container
+{
+    background-color: white;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.entry,.new-def{
+    border: 3px solid black;
+}
+.entries{
+    flex: 2;
+}
+.btn{
+    box-shadow: 4px 4px black;
+}
+
+/* Navigation Bar */
+/* Color nav bar & space elements out evenly */
+.nav{
+    background-color: #cccccc;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+}
+/* Format title for emphasis */
+.nav .title{
+    font-size: 50px;
+    font-weight: bold;
+}
+/* Set color & width of search bar */
+.nav .search{
+    background-color: white;
+    color: gray;
+    width: 350px;
+    height: 25px;
+    border: 3px solid black;
+    padding: 2px 0px 2px 10px;
+}
+/* Set color & sizing of login button */
+.nav .login{
+    background-color: #2b78e4;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border-width: 3px;
+    margin-left: 100px;
+}
+
+/* Dictionary Entries */
+.entry{
+    height: 210px;
+    margin: 0px 30px 30px 0px;
+    padding: 0px 20px 25px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.entry .left{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.entry .left h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+.entry .part-of-speech{
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+.entry .like{
+    background-color: #ffd966;
+    height: 40px;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.right{
+    flex: 4;
+    text-align: left;
+    padding: 0px 20px 0px 60px;
+    font-size: 22px;
+}
+
+/* New Definitions */
+.new-def
+{
+    height: 190px;
+    flex: 1;
+    font-size: 25px;
+    padding: 5px 15px;
+}
+.new-def strong{
+    font-weight: 900;
+}
+.new-def .add-def{
+    background-color: #93c47d;
+    width: 300px;
+    height: 50px;
+    vertical-align: bottom;
+    margin-top: 15px;
+    font-size: 27px;
+    font-weight: bolder;
+}
