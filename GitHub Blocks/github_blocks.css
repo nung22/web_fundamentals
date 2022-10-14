@@ -17,11 +17,12 @@ h1{
     font-size: 40px;
     color: rgb(50, 47, 47);
 }
-/*Flex contents in each row*/
 .row{
+    /* Flex images in each row to align them horizontally*/
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* Properly pace rows with 3 images */
+    justify-content: space-between; 
     padding: 20px;
     margin: 20px 0px;
 }
@@ -32,6 +33,7 @@ h1{
 /* Color middle row palevioletred */
 .middle{
     background-color:palevioletred;
+    /* Properly space row with 2 images */
     justify-content: space-evenly;
 }
 /* Color bottom row white */
