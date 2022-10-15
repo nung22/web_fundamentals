@@ -17,20 +17,26 @@
             <!-- Search Bar -->
             <h3 class="search">Search</h3>
             <!-- Login Button -->
-            <button class="login btn"><h3>Login</h3></button>
+            <button class="login btn" onclick="logout(this)">Login</button>
         </div>
         <!-- Main Content -->
         <div class="main">
             <!-- Dictionary Entries -->
             <div class="entries">
+                <!-- individual entry -->
                 <div class="entry">
                     <div class="left">
+                        <!-- defined word -->
                         <h2>ninja</h2>
+                        <!-- part of speech -->
                         <h3 class="part-of-speech">noun</h3>
+                        <!-- plural form of defined word -->
                         <h3>Plural: <em>ninjas</em></h3>
-                        <button class="like btn">13 likes</button>
+                        <!-- like button for entry -->
+                        <button class="like btn" onclick="alert('Ninja was liked')">13 likes</button>
                     </div>
                     <div class="right">
+                        <!-- definition -->
                     <p>A practitioner skilled in the 
                         <a href="https://www.dictionary.com/browse/japanese">Japanese</a>
                         art of 
@@ -39,14 +45,18 @@
                 </div>
                 <div class="entry">
                     <div class="left">
+                        <!-- defined word -->
                         <h2>ninja</h2>
+                        <!-- part of speech -->
                         <h3 class="part-of-speech">noun</h3>
+                        <!-- plural form of defined word -->
                         <h3>Plural: <em>ninjas</em></h3>
-                        <button class="like btn">37 likes</button>
+                        <!-- like button for entry -->
+                        <button class="like btn" onclick="alert('Ninja was liked')">37 likes</button>
                     </div>
                     <div class="right">
-                    <p>
-                        A <a href="https://www.dictionary.com/browse/programmer">programmer</a> 
+                    <!-- definition -->
+                    <p>A <a href="https://www.dictionary.com/browse/programmer">programmer</a> 
                         who breaks down problems with 
                         <a href="https://www.dictionary.com/browse/zen">zen</a>-like focus
                     </p>
@@ -56,9 +66,11 @@
             <!-- New Definitions -->
             <div class="new-def">
                 <h2>Dojonary is defined by <strong>YOU</strong></h2>
-                <button class="add-def btn">Add Definition</button>
+                <!-- button for adding a definition -->
+                <button class="add-def btn" onclick="removeAddDef(this)">Add Definition</button>
             </div>
         </div>
     </div>
+    <script src="button_clicker.js"></script>
 </body>
 </html>
