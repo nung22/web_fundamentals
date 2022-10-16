@@ -1,0 +1,70 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Simple Button */
+.btn{
+    width:150px;
+    color: white;
+    background-color: rgb(34, 112, 195);
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+
+/* Flexible Columns */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: auto -10px;
+}
+.col{
+    height: 20px;
+    margin: 10px;
+    padding: 15px;
+    flex: 1;
+    background-color: rgb(86, 144, 125);
+}
+/* Navigation Bar */
+.nav{
+    width: 970px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+.nav-links{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration-line: none;
+}
+.active{
+    font-weight: bold;
+}
+.btn{
+    background-color:rgb(51, 179, 214);
+    color: white;
+    margin-right: -30px;
+    padding: 5px 10px;
+    box-shadow: 3px 3px black;
+    font-size:medium;
+}

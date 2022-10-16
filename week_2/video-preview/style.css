@@ -59,12 +59,9 @@ body {
     margin-left: 20px;
 }
 
-.placeholder {
+.main-video {
     margin-bottom: 20px;
     width: 100%;
-}
-
-.placeholder svg {
     border-radius: 10px;
 }
 
