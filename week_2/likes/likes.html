@@ -9,30 +9,52 @@
     <link rel="stylesheet" href="likes.css">
 </head>
 <body>
-    <!-- navigation bar -->
-    <div class="top"><h1>Network</h1></div>
+    <!-- page title -->
+    <div class="top-container"><h1>Network</h1></div>
+    <!-- feed title -->
+    <h1 class="feed-title">Your Feed</h1>
     <!-- main content -->
     <div class="flex-container">
 
-        <!-- left column -->
+        <!-- user card -->
         <div class="user-card">
             <img src="./user-circle.png" alt="image of default user circle">
-            <div><a href="#">Add an avatar</a></div>
+            <div class="customize-link"><a href="#">Add an avatar</a></div>
             <h2 class="user-name">James Doe</h2>
         </div>
 
 
-        <!-- right column -->
+        <!-- feed area -->
         <div class="feed">
-            <h1>Your Feed</h1>
             <div class="post">
                 <div class="row">
-                    <h2 class="user-name">Some User</h2>
-                    <h3 class="likes"><p id="num-likes">3</p> like(s)</h3>
-                    <button class="btn" onclick="addLike()">Like</button>
+                    <h2 class="user-name">Neil M</h2>
+                    <h3 class="likes"><p id="num-likes-top">9</p> like(s)</h3>
+                    <!-- increments number of likes by 1 when "Like" button is pressed -->
+                    <button class="btn" onclick="addLikeTop()">Like</button>
                 </div>
-                <p class="post-description">This is some filler text, it 
-                    can say anything <br> we like</p>
+                <p class="post-description">I just set up this new discord bot, let 
+                    me<br>know what you all think. <a href="#">link</a></p>
+            </div>
+            <div class="post">
+                <div class="row">
+                    <h2 class="user-name">Nichole K</h2>
+                    <h3 class="likes"><p id="num-likes-middle">12</p> like(s)</h3>
+                    <!-- increments number of likes by 1 when "Like" button is pressed -->
+                    <button class="btn" onclick="addLikeMiddle()">Like</button>
+                </div>
+                <p class="post-description">Just finished my <a href="#">next comic</a>, 
+                    check it out.</p>
+            </div>
+            <div class="post">
+                <div class="row">
+                    <h2 class="user-name">Jim R</h2>
+                    <h3 class="likes"><p id="num-likes-bottom">9</p> like(s)</h3>
+                    <!-- increments number of likes by 1 when "Like" button is pressed -->
+                    <button class="btn" onclick="addLikeBottom()">Like</button>
+                </div>
+                <p class="post-description">I can't stop listening to the 
+                    <a href="#">new album</a>.<br>Who else is liking it?</p>
             </div>
         </div>
 
