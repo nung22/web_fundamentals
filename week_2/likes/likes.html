@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="likes.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="top"><h1>Network</h1></div>
+    <!-- main content -->
+    <div class="flex-container">
+
+        <!-- left column -->
+        <div class="user-card">
+            <img src="./user-circle.png" alt="image of default user circle">
+            <div><a href="#">Add an avatar</a></div>
+            <h2 class="user-name">James Doe</h2>
+        </div>
+
+
+        <!-- right column -->
+        <div class="feed">
+            <h1>Your Feed</h1>
+            <div class="post">
+                <div class="row">
+                    <h2 class="user-name">Some User</h2>
+                    <h3 class="likes"><p id="num-likes">3</p> like(s)</h3>
+                    <button class="btn" onclick="addLike()">Like</button>
+                </div>
+                <p class="post-description">This is some filler text, it 
+                    can say anything <br> we like</p>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <script src="likes.js"></script>
+</body>
+</html>
