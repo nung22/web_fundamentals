@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="dojo_weather.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <div class="flex-container">
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <!-- current city -->
+        <div class="flex-container city">
+            <h1 class="current-city">San Jose</h1>
+            <span class="set-temp">show temperature in 
+                <select name="temp-units" id="unit-select">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </span>
+        </div>
+        <!-- four day forecast -->
+        <div class="flex-container forecasts">
+            <div class="forecast">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="image of some rain">
+                <h4>some rain</h4>
+                <span><h3 class="high">24°</h3><h3 class="low">18°</h3></span>
+            </div>
+            <div class="forecast">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="image of some sun">
+                <h4>some sun</h4>
+                <span><h3 class="high">27°</h3><h3 class="low">19°</h3></span>
+            </div>
+            <div class="forecast">
+                <h2>Friday</h2>
+                <img src="./assets/some_clouds.png" alt="image of some clouds">
+                <h4>some clouds</h4>
+                <span><h3 class="high">21°</h3><h3 class="low">16°</h3></span>
+            </div>
+            <div class="forecast">
+                <h2>Saturday</h2>
+                <img src="./assets/some_sun.png" alt="image of some sun">
+                <h4>some sun</h4>
+                <span><h3 class="high">26°</h3><h3 class="low">21°</h3></span>
+            </div>
+        </div>
+        <!-- cookie warning -->
+        <div class="cookie flex-container">
+            <img src="./assets/cookie.png" alt="image of cookie">
+            <span>
+                <h3 class="message-title">Stop! Cookie Time</h3>
+                <p>We use cookies (sadly not the edibleo ones) to personalize
+                    <br>content and ads, to provide social media features and to
+                    <br>analyze our traffic. <a href="#">Read more...</a>
+                </p>
+            </span>
+            <button class="btn" onclick="dismissMessage()">I Accept</button>
+        </div>
+    </div>
+</body>
+</html>
