@@ -42,7 +42,7 @@ body {
     margin: 0 auto;
 }
 
-.flex-container,.nav-links,.forecast.high,.low{
+.flex-container,.nav-links,.forecast .range{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +72,7 @@ body {
     padding: 20px;
     width: 1010px;
     position: fixed;
-    left: 170px;
+    left: 430px;
     justify-content: space-around;
     font-size: 26px;
 }
@@ -113,7 +113,7 @@ body {
     margin: 0px 40px 0px 10px;
 }
 
-.cookie span{
+.cookie .message{
     flex: 8;
 }
 

@@ -8,7 +8,7 @@ function dismissMessage(){
 // CONVERT TEMPERATURE BETWEEN FAHRENHEIT AND CELSIUS
 function changeUnits(element){
     // store all temperatures in an array temp
-    var temp = document.querySelectorAll("#temp");
+    var temp = document.querySelectorAll(".temp");
     // convert temperatures from fahrenheit to celsius if celsius units are selected
     if(element.value === "°C"){
         for(var i=0; i<temp.length; i++){
