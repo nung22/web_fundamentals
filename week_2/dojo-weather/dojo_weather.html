@@ -15,9 +15,9 @@
         <div class="flex-container">
             <h1 class="nav-title">DojoWeather</h1>
             <ul class="nav-links">
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li><a href="#" onclick="alert('Loading weather report...')">Burbank</a></li>
+                <li><a href="#" onclick="alert('Loading weather report...')">Chicago</a></li>
+                <li><a href="#" onclick="alert('Loading weather report...')">Dallas</a></li>
             </ul>
         </div>
     </div>
@@ -27,10 +27,10 @@
         <!-- current city -->
         <div class="flex-container city">
             <h1 class="current-city">San Jose</h1>
-            <span class="set-temp">show temperature in 
-                <select name="temp-units" id="unit-select">
-                    <option value="celsius">°C</option>
-                    <option value="fahrenheit">°F</option>
+            <span>show temperature in  
+                <select name="temp-units" id="unit-select" onchange="changeUnits(this)">
+                    <option>°C</option>
+                    <option>°F</option>
                 </select>
             </span>
         </div>
@@ -40,33 +40,37 @@
                 <h2>Today</h2>
                 <img src="./assets/some_rain.png" alt="image of some rain">
                 <h4>some rain</h4>
-                <span><h3 class="high">24°</h3><h3 class="low">18°</h3></span>
+                <span><h3 class="high"><strong id="temp">24</strong>°</h3>
+                    <h3 class="low"><strong id="temp">18</strong>°</h3></span>
             </div>
             <div class="forecast">
                 <h2>Tomorrow</h2>
                 <img src="./assets/some_sun.png" alt="image of some sun">
                 <h4>some sun</h4>
-                <span><h3 class="high">27°</h3><h3 class="low">19°</h3></span>
+                <span><h3 class="high"><strong id="temp">27</strong>°</h3>
+                    <h3 class="low"><strong id="temp">19</strong>°</h3></span>
             </div>
             <div class="forecast">
                 <h2>Friday</h2>
                 <img src="./assets/some_clouds.png" alt="image of some clouds">
                 <h4>some clouds</h4>
-                <span><h3 class="high">21°</h3><h3 class="low">16°</h3></span>
+                <span><h3 class="high"><strong id="temp">21</strong>°</h3>
+                    <h3 class="low"><strong id="temp">16</strong>°</h3></span>
             </div>
             <div class="forecast">
                 <h2>Saturday</h2>
                 <img src="./assets/some_sun.png" alt="image of some sun">
                 <h4>some sun</h4>
-                <span><h3 class="high">26°</h3><h3 class="low">21°</h3></span>
+                <span><h3 class="high"><strong id="temp">26</strong>°</h3>
+                    <h3 class="low"><strong id="temp">21</strong>°</h3></span>
             </div>
         </div>
         <!-- cookie warning -->
         <div class="cookie flex-container">
             <img src="./assets/cookie.png" alt="image of cookie">
             <span>
-                <h3 class="message-title">Stop! Cookie Time</h3>
-                <p>We use cookies (sadly not the edibleo ones) to personalize
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize
                     <br>content and ads, to provide social media features and to
                     <br>analyze our traffic. <a href="#">Read more...</a>
                 </p>
@@ -74,5 +78,6 @@
             <button class="btn" onclick="dismissMessage()">I Accept</button>
         </div>
     </div>
+    <script src="dojo_weather.js"></script>
 </body>
 </html>

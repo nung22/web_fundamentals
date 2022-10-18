@@ -16,18 +16,19 @@ body {
     background-color: #9fc5f8;
     height: 70px;
     color: white;
-    padding: 15px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 32px;
 }
 
+.nav-title {
+    text-indent: 15px;
+}
 
 .nav-links {
-    width: 50%;
+    width: 45%;
     list-style-type: none;
-    font-size: 30px;
-    justify-content: center;
-    padding-left: 190px;
-    padding-right: 20px;
+    font-size: 35px;
+    padding-right: 40px;
     align-items: center;
 }
 
@@ -41,7 +42,7 @@ body {
     margin: 0 auto;
 }
 
-.flex-container,.nav-links,.forecast span{
+.flex-container,.nav-links,.forecast.high,.low{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,13 +51,30 @@ body {
 .city{
     border-bottom: 3px solid black;
     padding: 20px 0px;
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    width: 1050px;
+}
+
+
+.city #unit-select {
+    margin-left: 5px;
+    padding: 5px;
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .cookie {
     background-color: #eeeeee;
     border: 4px solid black;
+    padding: 20px;
+    width: 1010px;
+    position: fixed;
+    left: 170px;
+    justify-content: space-around;
+    font-size: 26px;
 }
 
 .forecast {
@@ -67,8 +85,9 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 15px;
-    padding: 20px;
-    height: 350px;
+    padding: 30px 20px;
+    height: 330px;
+    font-size: 20px;
 }
 
 .forecast h2 {
@@ -80,8 +99,18 @@ body {
     height: 170px;
 }
 
+.forecast .high {
+    margin-right: 60px;
+    color: #cf2a27;
+}
+
+.forecast .low {
+    color: #2b78e4;
+}
+
 .cookie img {
-    width: 100px;
+    flex: 1;
+    margin: 0px 40px 0px 10px;
 }
 
 .cookie span{
@@ -89,5 +118,11 @@ body {
 }
 
 .cookie .btn{
-    flex: 1;
+    flex: 1.5;
+    background-color: #9fc5f8;
+    border: 3px solid black;
+    font-size: 27px;
+    padding: 3px;
+    font-weight: 600;
+    box-shadow: 4px 4px black;
 }
