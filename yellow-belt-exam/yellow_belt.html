@@ -4,13 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yellow Belt</title>
+    <title>Yellow Belt Exam</title>
     <link rel="stylesheet" href="yellow_belt.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
     <div class="container">
-        <h1>Easy Money</h1>
+        <!-- Search Bar -->
+        <div class="search-bar flexed">
+            <img class="leaf icon" src="./assets/leaf.png" alt="image of leaf">
+            <h2 class="title">EasyBay</h2>
+            <input class="search" type="text" placeholder="Search for anything">
+            <h4 class="small-name">Sign In</h4>
+            <!-- Send an alert to the user when the shop icon is clicked -->
+            <img class="shop icon" onclick="cartStatus()" src="./assets/cart-dark.png" alt="image of cart">
+        </div>
+        <!-- Navigation Bar -->
+        <div class="nav-bar flexed">
+            <h4 class="small-name">Aeonium</h4>
+            <h4 class="small-name">Andormischus</h4>
+            <h4 class="small-name">Agave</h4>
+            <h4 class="small-name">Aloe</h4>
+            <h4 class="small-name">Anacampseros</h4>
+            <h4 class="small-name">Aristaloe</h4>
+            <h4 class="small-name">More...</h4>
+        </div>
+        <!-- Tag Line -->
+        <h1 class="tagline">Your Source for Serious Succulent Specialties</h1>
+        <!-- Main Pictures -->
+        <div class="main-pics flexed">
+            <div class="left flexed">
+                <div class="nav-block">
+                    <p class>
+                        Discover succ-<br>ulent varieties<br>one pot or rock<br>
+                        at a time!<br>
+                        <strong class="nav-line">Discover<img src="./assets/arrow-light.png" alt="image of arrow"></strong>
+                    </p>
+                </div>
+                <!-- Change original image to a new image on mouseover and revert to original on mouseout -->
+                <img onmouseover="changePic(this)" onmouseout="restorePic(this)" src="./assets/succulents-1.jpg" alt="image of various succulents">
+            </div>
+            <div class="right flexed">
+                <img src="./assets/aloe-m.jpg" alt="image of aloe">
+                <div class="nav-block">
+                    <strong class="nav-line">Soothing Aloe<img src="./assets/arrow-light.png" alt="image of arrow"></strong>
+                </div>
+            </div>
+        </div>
+        <!-- Small Pictures -->
+        <div class="small-pics flexed">
+            <div class="small-plant">
+                <img src="./assets/aeonium-s.jpg" alt="image of aeonium">
+                <h4 class="small-name">Aeonium</h4>
+            </div>
+            <div class="small-plant">
+                <img src="./assets/aloe-s.jpg" alt="image of aloe">
+                <h4 class="small-name">Aloe</h4>
+            </div>
+            <div class="small-plant">
+                <img src="./assets/cactus-s.jpg" alt="image of cactus">
+                <h4 class="small-name">Cactus</h4>
+            </div>
+            <div class="small-plant">
+                <img src="./assets/echeveria-s.jpg" alt="image of echeveria">
+                <h4 class="small-name">Echeveria</h4>
+            </div>
+            <div class="small-plant">
+                <img src="./assets/sedum-s.jpg" alt="image of sedum">
+                <h4 class="small-name">Sedum</h4>
+            </div>
+            <div class="small-plant">
+                <img src="./assets/sempervivum-s.jpg" alt="image of sempervivum">
+                <h4 class="small-name">Sempervivum</h4>
+            </div>
+        </div>
+        <!-- Cookie Message -->
+        <div class="cookie flexed">
+            <img src="./assets/alert-dark.png" alt="image of alert symbol">
+            <p class="message">This site makes use of third-party cookies, by 
+                clicking "I accept" you agree to the <br> terms outlined in our 
+                <a href="#">cookie policy</a>
+            </p>
+            <!-- Remove cookie message when user clicks button to accept terms -->
+            <button class="btn" onclick="removeMessage()">I accept</button>
+        </div>
     </div>
     <script src="yellow_belt.js"></script>
 </body>
