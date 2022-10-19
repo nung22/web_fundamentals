@@ -1,20 +1,19 @@
 var displayDiv = document.querySelector("#display");
 var savedVal = 0;
+var currentVal = 0;
 var currentOP = "";
 
 function press(number){
-    if(displayDiv.innerText==="0"){
-        displayDiv.innerText="";
-    }
-    if(currentOPs!=""&&SavedVal){
+    if(displayDiv.innerText==="0"||parseInt(displayDiv.innerText)===savedVal){
         displayDiv.innerText="";
     }
     displayDiv.innerText += number;
+    currentVal = parseInt(displayDiv.innerText);
 }
 
 function setOP(operator){
     currentOP = operator;
-    savedVal = displayDiv.innerText;
+    savedVal = parseInt(displayDiv.innerText);
 }
 
 function clr(){
@@ -24,10 +23,10 @@ function clr(){
 
 function calculate(){
     var newVal = 0;
-    if(currentOp==="+"){
-        newVal = savedVal + displayDiv.InnerText;
-    }
-    savedVal = 0;
+    if(currentOP==="+"){ newVal = savedVal + currentVal; }
+    else if(currentOP==="-"){ newVal = savedVal - currentVal; }
+    else if(currentOP==="*"){ newVal = savedVal * currentVal; }
+    else if(currentOP==="/"){ newVal = savedVal / currentVal; }
     displayDiv.innerText = newVal;
-
+    savedVal = newVal;
 }
