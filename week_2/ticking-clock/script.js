@@ -8,25 +8,8 @@ setInterval( function() {
     var time = getSecondsSinceStartOfDay();
     console.log(time);
     console.log(time%60);
-    moveSecondHand(time);
-    moveMinuteHand(time);
-    moveHourHand(time);
+    console.log(time%3600);
+    hour.style.transform = 'rotate(' + (time%43200)/120 + 'deg)';
+    minutes.style.transform = 'rotate(' + (time%3600)/10 + 'deg)';
+    seconds.style.transform = 'rotate(' + (time%60)*6 + 'deg)';
 }, 1000);
-
-var seconds = document.querySelector("#seconds");
-var minutes = document.querySelector("#minutes");
-var hours = document.querySelector("#hour");
-
-
-function moveSecondHand(sec){
-    seconds.style.transform = 'rotate(' + sec*6 + 'deg)';
-}
-
-function moveMinuteHand(sec){
-    minutes.style.transform = 'rotate(' + sec/3600% + 'deg)';
-
-}
-
-function moveHourHand(sec){
-    hours.style.transform = 'rotate(' + ((sec/3600)%12)/12*360 + 180 + 'deg)';
-}

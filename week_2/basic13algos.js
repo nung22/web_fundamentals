@@ -10,6 +10,7 @@ function print1to255(){
 }
 
 
+
 // 2. Print all the odd integers from 1 to 255
 function printOdds1To255(){
     // FOR LOOP ITERATES FROM 1 TO 255 IN INCREMENTS OF 2
@@ -48,7 +49,12 @@ function printArrayVals(arr){
 
 function printMaxOfArray(arr){
     var max = 0;
-    for(var i)
+    for(var i=0; i<arr.length; i++){
+        if(max<arr[i]){
+            max = arr[i];
+        }
+    }
+    return max;
 }
 
 // 6. Analyze an array's values and print the average
